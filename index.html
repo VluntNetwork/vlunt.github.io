@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlunt Network | Inicio</title>
+    <meta name="description" content="¡Explora nuestro servidor Minecraft en Vlunt Network! Únete a la competencia y construye tu camino hacia la cima. ¡Descubre aventuras emocionantes y una comunidad vibrante hoy mismo!">
+    <meta name="author" content="Carlos Fredes">
+    <link rel="icon" href="https://www.vlunt.xyz/media/favicon.webp">
+    <meta name="theme-color" content="#00D9FF">
+    <meta property="og:title" content="Vlunt Network">
+    <meta property="og:site_name" content="Vlunt Website">
+    <meta property="og:description" content="¡Explora nuestro servidor Minecraft en Vlunt Network! Únete a la competencia y construye tu camino hacia la cima. ¡Descubre aventuras emocionantes y una comunidad vibrante hoy mismo!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vlunt.xyz">
+    <meta property="og:image" content="https://www.vlunt.xyz/media/logo_small.webp">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#homebutton"><img class="desktop_navbar_logo_img" src="media/logo_small.webp" alt="logo"></a>
+      <a href="/wiki/index.html" target="_blank" rel="noopener noreferrer" class="desktop_navbar_link">Wiki</a>
+      <a href="#discord" class="desktop_navbar_link scroll">Comunidad</a>
+      <a href="#about" class="desktop_navbar_link scroll">Sobre nosotros</a>
+      <a href="https://vlunt.tebex.io/" target="_blank" rel="noopener noreferrer" class="desktop_navbar_link scroll">Tienda</a>
+      <div class="desktop_navbar_link2_div">
+          <a href="#join" class="desktop_navbar_link2 scroll">¡Únete!</a>
+      </div>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.webp" alt="logo"></a>
+      <div id="mobile_navbar_links">
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="/wiki/index.html" target="_blank" rel="noopener noreferrer">Wiki</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Comunidad</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">Sobre nosotros</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="https://vlunt.tebex.io/" target="_blank" rel="noopener noreferrer">Tienda</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">¡Únete!</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
+    </div>
+    <div id="homebutton" class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+          <img class="main1_logo" src="media/logo.webp" alt="logo">
+        </a>
+        <div class="main1_description">
+          <a>¡Eleva tu nivel<br>y</a>
+          <a class="main1_actcent">destaca en lo competitivo</a><a>!</a>
+        </div>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">vlunt.xyz</span>
+            <br>
+            <span class="main1_ipcopier_text2">Clic para copiar</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("vlunt.xyz:19152");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('IP copiada en el portapapeles'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script>
+        </div>
+        <a href="#more" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="media/downarrow.webp">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">Lo que tenemos</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/keyall_semanal.webp">
+            <a class="main2_feature_headline">KeyAll Semanal</a>
+            <a class="main2_feature_text">Se realizan keyall todos los sábados o domingos.</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/mayor_compatibilidad.webp">
+            <a class="main2_feature_headline">Mayor compatibilidad</a>
+            <a class="main2_feature_text">Puedes ingresar tanto en Bedrock y Java, y también siendo Premium y No Premium.</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/mejoras_constantes.webp">
+            <a class="main2_feature_headline">Mejoras constantes</a>
+            <a class="main2_feature_text">Escuchamos a la comunidad para ofrecer mejores actualizaciones y mejoras.</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/buen_rendimiento.webp">
+            <a class="main2_feature_headline">Buen rendimiento</a>
+            <a class="main2_feature_text">Ofrecemos servidores 24/7 y sin lag.</a>
+          </div>
+        </div>
+      </div>
+      <div id="discord"></div>
+      <div class="main4">
+        <a class="headline">Únete al discord</a>
+        <div class="main4_dc_div">
+          <iframe class="main4_dc_widget" src="https://discord.com/widget?id=872910636856774667&theme=dark" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <div class="main4_dc_description_div">
+            <a class="main4_dc_description_title">¡Vamos a hablar!</a>
+            <a class="main4_dc_description"> ・Conoce otros jugadores <br> ・Haga preguntas <br> ・Reciba notificaciones sobre actualizaciones <br> ・Dar su opinión  <br> ・y más </a>
+            <a href="https://discord.gg/vKfqQJxAex" target="_blank" rel="noopener noreferrer" class="main4_dc_button_a">
+              <div class="main4_dc_button">Entrar</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="about"></div>
+      <div class="main5">
+        <a class="headline">Quiénes somos</a>
+        <div class="main5_admin_div">
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="media/dvrkv1per.webp">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">[Owner]</a>
+              <a class="main5_admins_description_title">dvrkv1per</a>
+              <a class="main5_admins_description">Owner y Developer<br><br>・Se encarga de la configuración de Discord y Minecraft.<br>・Se encarga de buscar/parchar<br>bugs y vulnerabilidades.<br>・Se encarga de supervisar el personal.</a>
+            </div>
+          </div>
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="media/170w.webp">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">[Owner]</a>
+              <a class="main5_admins_description_title">170w</a>
+              <a class="main5_admins_description">Owner<br><br>・Se encarga de la experiencia<br>dentro del juego.<br>・Se encarga de gestionar la comunidad.<br>・Se encarga de la gestión financiera.</a>
+            </div>
+          </div>
+          <!-- <div class="main5_admins_div main5_admins_dev_type1">
+            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">[Admin]</a>
+              <a class="main5_admins_description_title" href="https://example.com">Admin Name</a>
+              <a class="main5_admins_description">Admin<br>description</a>
+            </div>
+          </div> -->
+        </div>
+        <div class="main5_supporter_div">
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/RickYourZeusEat.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Helper]</a>
+              <a class="main5_supporters_description_title">RickYourZeusEat</a>
+              <a class="main5_supporters_description">Helper<br><br>・Se encarga de controlar el chat<br>・Se encarga de buscar hackers<br>・Se encarga de atender tickets</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/Suc1d3_.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Helper]</a>
+              <a class="main5_supporters_description_title">Suc1d3_</a>
+              <a class="main5_supporters_description">Helper<br><br>・Se encarga de controlar el chat<br>・Se encarga de buscar hackers<br>・Se encarga de atender tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="join"></div>
+      <div class="main3">
+        <a class="headline">Cómo ingresar</a>
+        <div class="main3_join_div_div">
+          <div class="main3_join_div">
+            <a class="main3_join_title">Java</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+                <a>Version:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>vlunt.xyz</a>
+                <a>1.12.x - 1.20.x</a>
+              </div>
+            </div>
+          </div>
+          <div class="main3_join_div">
+            <a class="main3_join_title">Bedrock</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+                <a>Port:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>vlunt.xyz</a>
+                <a>19152</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="copyright_div">
+      <a href="https://carlosfredes.github.io/" target="_blank" rel="noopener noreferrer" class="copyright">Made by @carlosfredes</a>
+    </footer>
+  </body>
+</html>
