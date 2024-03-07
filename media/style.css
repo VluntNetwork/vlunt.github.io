@@ -14,13 +14,38 @@
 
     color-scheme: dark;
 }
+@font-face {
+	font-family: 'SpaceGrotesk-Medium';
+	src: url('./fonts/SpaceGrotesk-Medium.ttf') format('truetype');
+	font-display: swap;
+}
+    @font-face {
+		font-family: 'SpaceGrotesk-Light';
+		src: url('./fonts/SpaceGrotesk-Light.ttf') format('truetype');
+		font-display: swap;
+	}
+    @font-face {
+		font-family: 'SpaceGrotesk-Regular';
+		src: url('./fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'SpaceGrotesk-SemiBold';
+		src: url('./fonts/SpaceGrotesk-SemiBold.ttf') format('truetype');
+		font-display: swap;
+	}
+    @font-face {
+		font-family: 'SpaceGrotesk-Bold';
+		src: url('./fonts/SpaceGrotesk-Bold.ttf') format('truetype');
+		font-display: swap;
+	}
 
 span {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'SpaceGrotesk-Medium', sans-serif;
 }
 
 body {
-    font-family:'Space Grotesk', sans-serif;
+    font-family:'SpaceGrotesk-Regular', sans-serif;
     background-color: var(--background1);
     color: white;
     margin:0px;
@@ -53,6 +78,7 @@ body {
     height: 3rem;
     z-index: 10;
     font-size: 2rem;
+    font-family: 'SpaceGrotesk-SemiBold', sans-serif;
     font-weight: 600;
     justify-content: center;
     backdrop-filter: blur(15px);
@@ -67,6 +93,7 @@ body {
     color: #fff;
     font-size:3rem;
     text-align: center;
+    font-family: 'SpaceGrotesk-SemiBold', sans-serif;
     font-weight: 600;
 }
 
@@ -117,6 +144,7 @@ body {
     transition: all .5s;
     margin-left: auto;
     margin-right: 2rem;
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 700;
     border: solid 1px var(--accent1);
     border-radius: var(--roundness);
@@ -236,6 +264,7 @@ body {
 }
 
 .main1_actcent {
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 800;
     color:var(--accent1);
 }
@@ -261,6 +290,7 @@ body {
 
 .main1_ipcopier_text1 {
     font-size:2rem;
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 800;
 }
 
@@ -356,6 +386,7 @@ body {
     margin-top: 1rem;
     text-align: center;
     font-size:1.5rem;
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 700;
     margin-top: auto;
 }
@@ -400,6 +431,7 @@ body {
     margin: 2rem;
     text-align: center;
     font-size:1.5rem;
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 700;
 
 }
@@ -494,6 +526,7 @@ body {
 .main5_admins_description_rank {
     text-align: center;
     font-size:1.5rem;
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 700;
     margin-bottom: .5rem;
 }
@@ -506,6 +539,7 @@ body {
 .main5_admins_description_title {
     text-align: center;
     font-size:1.5rem;
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -559,6 +593,7 @@ body {
 .main5_supporters_description_rank {
     text-align: center;
     font-size:1.2rem;
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 700;
     margin-bottom: .5rem;
 }
@@ -568,6 +603,7 @@ body {
 .main5_supporters_description_title {
     text-align: center;
     font-size:1.3rem;
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -619,6 +655,7 @@ body {
 .main3_join_title {
     text-align: center;
     font-size:1.5rem;
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
